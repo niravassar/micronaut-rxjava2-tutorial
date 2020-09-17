@@ -34,3 +34,37 @@ apply other micronaut features.
 
 I have structured this tutorial to begin with understanding concepts and terms. Each section I recommend taking notes and coding samples.
 
+# RxJava Tutorial
+
+## Concept Videos
+
+Watch these videos to grasp `Observer` and `Observable` concepts
+
+- https://www.youtube.com/watch?v=hSvFU74ZG7M
+- https://www.youtube.com/watch?v=hzaq64zh0K4
+- take notes and repeat any coding examples
+
+## Essential Articles
+
+- Vogella RxJava2
+    - Read all the way through and stop at section 7
+    - Take notes and repeat the coding examples
+    - https://www.vogella.com/tutorials/RxJava/article.html
+    
+- Baeldung RxJava
+    - Read all the way through in its entirety
+    - Take notes and repeat the coding examples
+    - https://www.baeldung.com/rx-java
+    
+## Udemy Course
+
+- Registration is free
+- Go through the course 
+- Essential sections on Section 1 to 6
+- Take notes and after each section do the coding examples on your own
+- https://www.udemy.com/course/rxjava_2/
+
+## Micronaut and RxJava
+
+- Read the article and attempt to incorporate reactive programming into client calls from controllers
+- https://piotrminkowski.com/2019/11/12/micronaut-tutorial-reactive/
