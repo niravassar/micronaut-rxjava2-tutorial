@@ -37,6 +37,8 @@ dependencies {
     testImplementation "io.micronaut:micronaut-inject-groovy"
     testImplementation "io.micronaut.test:micronaut-test-spock"
     testImplementation "io.micronaut.test:micronaut-test-junit5"
+
+    compile group: 'io.reactivex', name: 'rxjava', version: '1.3.8'
 }
 
 test.classpath += configurations.developmentOnly
