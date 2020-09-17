@@ -4,13 +4,12 @@
 
 This tutorial was created for developers who are interested in gaining a basic and fundamental understanding of RxJava 2.
 Micronaut is built with RxJava 2 and is designed to support reactive APIs and streams. These concepts were largely unfamiliar to me. 
-Whenever I ran into it, I  ust fumbled through with the limited knowledge I had ... armed with some predefined concepts. 
+Whenever I ran into it, I mainly fumbled through with the limited knowledge I had, only armed with some predefined concepts. 
 In the cases where some piece of code made no sense at all, I would quickly google examples and hack my way through the syntax, not really taking the time to 
 understand the underlying concepts.  I realize this approach could only take me so far. Maybe other java developers have experienced the same situation.
 
-Fortunately I took a few days to buckle down and study Reactive and RxJava concepts form the ground up. This has given me a solid fundamental
-understanding of why and how reactive programming is used.  I feel I have a good understanding and am not lost anymore. Granted 
-it is still a long way from perfection and expertise.
+What helped me is that I took a few days to buckle down and study Reactive and RxJava concepts form the ground up. This has given me a solid fundamental
+understanding of why and how reactive programming is used. 
 
 I used the following approach:
 
@@ -32,7 +31,7 @@ In this area, I just place whatever code snippets I tried out along the way. I f
 with all the packaged up dependencies of micronaut included. Coding in a micronaut application also offers a fast track path to 
 apply other micronaut features. 
 
-I have structured this tutorial to begin with understanding concepts and terms. Each section I recommend taking notes and coding samples.
+I have structured this tutorial to begin with understanding concepts and terms. For each section I recommend taking notes and coding samples.
 
 # RxJava Tutorial
 
