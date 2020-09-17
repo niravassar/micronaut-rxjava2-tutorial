@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: micronaut.rxjava2.tutorial
+---
+testFramework: spock
+sourceLanguage: groovy
