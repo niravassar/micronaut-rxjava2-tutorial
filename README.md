@@ -33,6 +33,19 @@ apply other micronaut features.
 
 I have structured this tutorial to begin with understanding concepts and terms. For each section I recommend taking notes and coding samples.
 
+# Run tests
+
+- `gradlew test` - runs the testing suite
+- in build.gradle toggle this clause by commenting it to run JUNIT or Spock tests
+
+```
+// use JUnit 5 platform
+// NOTES: comment this out to run spock tests
+test {
+    useJUnitPlatform()
+}
+```
+
 # RxJava Tutorial
 
 ## Concept Videos
