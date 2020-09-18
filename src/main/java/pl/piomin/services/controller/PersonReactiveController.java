@@ -1,9 +1,10 @@
 package pl.piomin.services.controller;
 
-import io.micronaut.http.annotation.Body;
-import io.micronaut.http.annotation.Controller;
-import io.micronaut.http.annotation.Post;
+import io.micronaut.http.MediaType;
+import io.micronaut.http.annotation.*;
 import io.micronaut.validation.Validated;
+import io.reactivex.Flowable;
+import io.reactivex.Maybe;
 import io.reactivex.Single;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,6 +13,8 @@ import pl.piomin.services.model.Person;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 @Controller("/persons/reactive")
 @Validated
@@ -40,4 +43,23 @@ public class PersonReactiveController {
         return Single.just(person);
     }
 
+    @Get("/{id}")
+    public Maybe<Person> findById(@PathVariable Integer id) {
+        return Maybe.just(persons.stream().filter(person -> person.getId().equals(id)).findAny().get());
+    }
+
+    @Get(value = "/stream", produces = MediaType.APPLICATION_JSON_STREAM)
+    public Flowable<Person> findAllStream() {
+        return Flowable.fromIterable(persons).doOnNext(person -> LOGGER.info("Server emit {}", person));
+    }
+
+    @Get(value = "/stream/callable", produces = MediaType.APPLICATION_JSON_STREAM)
+    public Flowable<Person> findAllStreamWithCallable() {
+        return Flowable.fromCallable(() -> {
+           int r = new Random().nextInt(100);
+           Person p = new Person(1, "Name" + r, "Surname"+r, r, Gender.MALE);
+           return p;
+        }).doOnNext(person -> LOGGER.info("Server emit {}", person))
+                .repeat(9);
+    }
 }
