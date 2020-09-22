@@ -1,6 +1,5 @@
 plugins {
     id "groovy"
-    id "com.github.johnrengelman.shadow" version "5.2.0"
     id "application"
 }
 
@@ -56,11 +55,6 @@ mainClassName = "micronaut.rxjava2.tutorial.Application"
 
 tasks.withType(GroovyCompile) {
     groovyOptions.forkOptions.jvmArgs.add('-Dgroovy.parameters=true')
-}
-
-
-shadowJar {
-    mergeServiceFiles()
 }
 
 tasks.withType(JavaExec) {
