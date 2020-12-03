@@ -80,3 +80,15 @@ Watch these videos to grasp `Observer` and `Observable` concepts
 
 - Read the article and attempt to incorporate reactive programming into client calls from controllers
 - https://piotrminkowski.com/2019/11/12/micronaut-tutorial-reactive/
+
+## Video Recording
+
+The recording of the November tech lunch is now available on the internal site.  
+
+https://sites.google.com/objectcomputing.com/internal/company-culture/tech-lunches (scroll down to Tech Lunch Schedule)
+
+You may be interested in articles that Charles Calkins wrote a few years ago about reactive programming:
+
+https://objectcomputing.com/resources/publications/mnb/reactive-opendds-part-i
+
+https://objectcomputing.com/resources/publications/mnb/reactive-opendds-part-ii-operators
